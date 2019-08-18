@@ -1,19 +1,21 @@
 
 import java.util.Scanner;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 /**
- *
- * @author dalej
+ *Esta clase maneja la secuencia de numeros.
+ * @author Duvan Poveda - Leidy Torres
  */
 public class Secuencia {
+    /**
+ *Variable para el manejo de la entrada del teclado
+ */
     private Scanner scanner = new Scanner(System.in);
     
+    /**
+    *Este metodo se encarga de recibir los numeros que el usuario ingresa
+    * 
+    */
     public void recibirNumeros(){
         int[] numero = new int[100];
         int contador = 0;
@@ -31,6 +33,12 @@ public class Secuencia {
         }while(respuesta.equals("si"));
         ordenBurbuja(numero,contador);
     }
+    
+       /**
+    *Este metodo se encarga de ordenar por el metodo de burbuja el vector recibido
+    * @param numero
+    * @param contador
+    */
     public void ordenBurbuja(int[] numero,int contador){
         for (int x = 0; x <=contador; x++) {
             for (int i = 0; i <= contador-x-1; i++) {
@@ -47,6 +55,13 @@ public class Secuencia {
     System.out.println("El numero menor es : "+menor);
     mostrarFaltantes(numero,contador,mayor,menor);
     }
+    /**
+    *Este metodo se encarga de calcular los numeros faltantes e imprimirlos en pantalla
+    * @param numero
+    * @param contador
+    * @param mayor
+    * @param menor
+    */
     public void mostrarFaltantes(int[] numero,int contador,int mayor,int menor){
          int[] numerosRequeridos = new int[100];
     int tamaño = mayor - menor;

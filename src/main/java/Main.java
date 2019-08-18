@@ -1,12 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 /**
- *
- * @author dalej
+ *Este programa esta diseñado para examinar los numeros faltantes 
+ * en una secuencia de numeros ingresada por el usuario
+ * @author Duvan Poveda - Leidy Torres
  */
 public class Main {
     public static void main(String [] args){
